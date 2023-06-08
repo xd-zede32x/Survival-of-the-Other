@@ -1,7 +1,6 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Indicators : MonoBehaviour
 {
@@ -52,5 +51,11 @@ public class Indicators : MonoBehaviour
         }
 
         hethtBar.fillAmount = healthAmount / 100;
+
+        if (healthAmount <= 0)
+        {
+            SceneManager.LoadScene("StartMenu");
+            Cursor.lockState = CursorLockMode.None;
+        }
     }
 }
