@@ -14,6 +14,8 @@ public class CustomController : MonoBehaviour
     private float _animationInterpolation = 1f;
     private AudioSource _stepsSourse;
 
+    public Transform AimTarget;
+
     void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
@@ -66,6 +68,10 @@ public class CustomController : MonoBehaviour
         {
             anim.SetTrigger("Jump");
         }
+
+        Ray desiredTargetRay = mainCamera.GetComponent<Camera>().ScreenPointToRay(new Vector2 (Screen.width / 2, Screen.height / 2));
+        Vector3 desiredTargetPosition = desiredTargetRay.origin + desiredTargetRay.direction * 0.7f;
+        AimTarget.position = desiredTargetPosition;
     }
     void FixedUpdate()
     {

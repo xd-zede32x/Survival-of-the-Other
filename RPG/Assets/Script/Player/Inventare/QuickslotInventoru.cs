@@ -96,8 +96,8 @@ public class QuickslotInventoru : MonoBehaviour
     {
         if (int.Parse(healthText.text) + quickslotParent.GetChild(currentQuickslotID).GetComponent<Slot>().item.changeHealth <= 100)
         {
-            float newHealth = int.Parse(healthText.text) + quickslotParent.GetChild(currentQuickslotID).GetComponent<Slot>().item.changeHealth;
-            healthText.text = newHealth.ToString();
+            float Health = int.Parse(healthText.text) + quickslotParent.GetChild(currentQuickslotID).GetComponent<Slot>().item.changeHealth;
+            healthText.text = Health.ToString();
         }
         else
         {
