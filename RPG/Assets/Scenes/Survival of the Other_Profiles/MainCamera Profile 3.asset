@@ -62,19 +62,19 @@ MonoBehaviour:
     value: {r: 1, g: 1, b: 1, a: 1}
   hueShift:
     overrideState: 1
-    value: 8
+    value: 0
   saturation:
     overrideState: 1
     value: 100
   brightness:
     overrideState: 1
-    value: 20
+    value: 30
   postExposure:
     overrideState: 1
     value: 1
   contrast:
     overrideState: 1
-    value: 10
+    value: 6
   mixerRedOutRedIn:
     overrideState: 1
     value: 100
@@ -1390,7 +1390,7 @@ MonoBehaviour:
     value: 0
   color:
     overrideState: 1
-    value: {r: 0.9843137, g: 1, b: 0, a: 1}
+    value: {r: 0.8566861, g: 0.8679245, b: 0.1514774, a: 1}
   fastMode:
     overrideState: 0
     value: 0
@@ -1428,10 +1428,10 @@ MonoBehaviour:
     value: {x: 0.5, y: 0.5}
   intensity:
     overrideState: 1
-    value: 0.501
+    value: 0.427
   smoothness:
     overrideState: 1
-    value: 0.315
+    value: 0.519
   roundness:
     overrideState: 1
     value: 1

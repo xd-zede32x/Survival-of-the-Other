@@ -38,8 +38,38 @@ public class CustomController : MonoBehaviour
 
         currentSpeed = Mathf.Lerp(currentSpeed, walkingSpeed, Time.deltaTime * 3);
     }
+
+    public void ChangeLayerWeigth(float newLayerHeigth)
+    {
+        StartCoroutine(SmoothLayerChange(anim.GetLayerWeight(1), newLayerHeigth, 0.3f));
+    }
+
+    IEnumerator SmoothLayerChange(float oldWigth, float newWigth, float changeDuration)
+    {
+        float enased = 0;
+
+        while (enased < changeDuration)
+        {
+            float currentWeigth = Mathf.Lerp(oldWigth, newWigth, enased / changeDuration);
+            anim.SetLayerWeight(1, currentWeigth);
+            enased += Time.deltaTime;
+            yield return null;
+        }
+        anim.SetLayerWeight(1, newWigth);
+    }
+
     private void Update()
     {
+        if (Input.GetKeyDown(KeyCode.Mouse0))
+        {
+            anim.SetBool("Hit", true);
+        }
+
+        if (Input.GetKeyUp(KeyCode.Mouse0))
+        {
+            anim.SetBool("Hit", false);
+        }
+
         transform.rotation = Quaternion.Euler(transform.rotation.eulerAngles.x, mainCamera.rotation.eulerAngles.y, transform.rotation.eulerAngles.z);
 
         if (Input.GetKey(KeyCode.W) && Input.GetKey(KeyCode.LeftShift))
