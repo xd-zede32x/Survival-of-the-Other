@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2a868c84402a7f49873815d9d8a7e1d, type: 3}
+  m_Name: Legs
+  m_EditorClassIdentifier: 
+  itemName: Legs
+  maximumAmout: 1
+  itemPrefab: {fileID: 6100159097161215919, guid: f7626676132dd4c4a9d5ef7dbd646b58, type: 3}
+  clothingPrefab: {fileID: 919132149155446097, guid: 478fdbc3f6c248f4fa92afa765567dfa, type: 3}
+  icon: {fileID: 21300000, guid: 33a9ee48b11adc9448cac59f3bfd9f27, type: 3}
+  itemTape: 4
+  clothType: 4
+  itemDescription: 
+  isConsumeable: 0
+  inHeandName: 
+  changeHealth: 0
+  changeHunger: 0
+  changeThirst: 0
+  healAmount: 0

@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2a868c84402a7f49873815d9d8a7e1d, type: 3}
+  m_Name: Head
+  m_EditorClassIdentifier: 
+  itemName: Head
+  maximumAmout: 1
+  itemPrefab: {fileID: 4104539014599740049, guid: 7a52fdf508290c4468d2014d9407741d, type: 3}
+  clothingPrefab: {fileID: 919132149155446097, guid: ed47a7716439fb84d93eb7005ddaab15, type: 3}
+  icon: {fileID: 21300000, guid: b60a46079de8ce843a0ec72c33915af9, type: 3}
+  itemTape: 4
+  clothType: 1
+  itemDescription: 
+  isConsumeable: 0
+  inHeandName: 
+  changeHealth: 0
+  changeHunger: 0
+  changeThirst: 0
+  healAmount: 0
