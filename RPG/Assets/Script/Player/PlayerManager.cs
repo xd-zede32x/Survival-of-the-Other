@@ -8,8 +8,7 @@ public class PlayerManager : MonoBehaviour
     public static int playerHP;
     public static bool isGameOver;
     [SerializeField] private Image _playerHPImage;
-    [SerializeField] private GameObject _bloodOverlay;
-    [SerializeField] private GameObject _gameOverPanel;
+    [SerializeField] private GameObject _bloodOverlay; 
     [SerializeField] private Indicators _indicators;
 
     void Start()

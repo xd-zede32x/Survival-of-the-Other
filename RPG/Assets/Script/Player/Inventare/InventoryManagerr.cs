@@ -29,7 +29,6 @@ public class InventoryManagerr : MonoBehaviour
     {
         mainCamera = Camera.main;
         slots.AddRange(inventoryAndClothing.GetComponentsInChildren<Slot>());
-
         for (int i = 0; i < quickSlotPanel.childCount; i++)
         {
             if (quickSlotPanel.GetChild(i).GetComponent<Slot>() != null)
@@ -94,6 +93,7 @@ public class InventoryManagerr : MonoBehaviour
                 {
                     AddItem(hit.collider.gameObject.GetComponent<Item>().item, hit.collider.gameObject.GetComponent<Item>().amount);
                     Destroy(hit.collider.gameObject);
+                    Debug.Log("TriggerAxe");
                 }
             }
         }

@@ -125,7 +125,7 @@ public class CustomController : MonoBehaviour
     }
 
     private void CameraMove()
-    { 
+    {
         Vector3 camF = mainCamera.forward;
         Vector3 camR = mainCamera.right;
         camF.y = 0;

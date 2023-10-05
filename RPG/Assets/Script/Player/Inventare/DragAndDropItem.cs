@@ -115,7 +115,7 @@ public class DragAndDropItem : MonoBehaviour, IPointerDownHandler, IPointerUpHan
 
         else if (eventData.pointerCurrentRaycast.gameObject.transform.parent.parent == null)
         {
-            return;
+            return;   
         }
 
         else if (eventData.pointerCurrentRaycast.gameObject.transform.parent.parent.GetComponent<Slot>() != null)

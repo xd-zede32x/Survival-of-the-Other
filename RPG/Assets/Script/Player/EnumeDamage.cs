@@ -6,6 +6,6 @@ public class EnumeDamage : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        StartCoroutine(FindObjectOfType<PlayerManager>().Damage(DamageCount));
+        StartCoroutine(FindObjectOfType<PlayerManager>().Damage(DamageCount));  
     }
 }
