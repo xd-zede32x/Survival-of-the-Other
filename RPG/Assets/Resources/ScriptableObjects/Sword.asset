@@ -12,16 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2a868c84402a7f49873815d9d8a7e1d, type: 3}
   m_Name: Sword
   m_EditorClassIdentifier: 
-  itemName: Sword
+  itemName: Swords
   maximumAmout: 1
-  itemPrefab: {fileID: 5953977592163608830, guid: fec4e7e32c83e644bbebed4c322ee643, type: 3}
+  itemPrefab: {fileID: 8268657970226174257, guid: 28507bc32a2fb4c4a936edcfd18053d3, type: 3}
   clothingPrefab: {fileID: 0}
-  icon: {fileID: 21300000, guid: 7f469af66e34bac4695557fa9b6262f0, type: 3}
+  icon: {fileID: 21300000, guid: f6f2f8bce19f6fb478f96512e7206010, type: 3}
   itemTape: 3
   clothType: 0
   itemDescription: 
   isConsumeable: 0
-  inHeandName: SwordWord
+  inHeandName: Sword
   changeHealth: 0
   changeHunger: 0
   changeThirst: 0

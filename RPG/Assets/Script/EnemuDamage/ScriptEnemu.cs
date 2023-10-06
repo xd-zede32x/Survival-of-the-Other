@@ -3,9 +3,14 @@ using UnityEngine.UI;
 
 public class ScriptEnemu : MonoBehaviour
 {
+    [SerializeField] private GameObject _vfx;
+    [SerializeField] private Slider _healthBar;
+    [SerializeField] private GameObject _textWin;
+    [SerializeField] private Animator _animatorEnemu;
+    [SerializeField] private Animator _textAnimation;
+    [SerializeField] private Transform _enemuTransform;
+
     private int _enemuHealth = 100;
-    [SerializeField] Animator _animatorEnemu;
-    [SerializeField] Slider _healthBar;
 
     private void Update()
     {
@@ -19,14 +24,13 @@ public class ScriptEnemu : MonoBehaviour
         if (_enemuHealth <= 0)
         {
             _animatorEnemu.SetTrigger("death");
-            GetComponent<Collider>().enabled = false;
+            _textWin.SetActive(true);
+            _textAnimation.Play("text");
             _healthBar.gameObject.SetActive(false);
-            Debug.Log("Вы победили врага");
-        }
-
-        else
-        {
-            _animatorEnemu.SetTrigger("damage");
+            GameObject _effect = Instantiate(_vfx, _enemuTransform.position, Quaternion.identity) as GameObject;
+            Destroy(gameObject, 2);
+            Destroy(_effect, 10);
         }
     }
+
 }

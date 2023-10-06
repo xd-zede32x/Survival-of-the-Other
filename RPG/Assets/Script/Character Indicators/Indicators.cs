@@ -8,7 +8,7 @@ public class Indicators : MonoBehaviour
     private Camera _mainCamera;
 
     public float healthAmount = 100;
-    public float uiHealthAmount = 100;
+    private float uiHealthAmount = 100;
 
     public float foodAmount = 100;
     private float uiFoodAmount = 100;

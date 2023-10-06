@@ -16,7 +16,7 @@ public class IdleBehavior : StateMachineBehaviour
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         timer += Time.deltaTime;
-        if (timer > 6)
+        if (timer >= 7)
         {
             animator.SetBool("IsPotroller", true);
         }

@@ -11,7 +11,7 @@ public class CheseBehaviour : StateMachineBehaviour
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         agent = animator.GetComponent<NavMeshAgent>();
-        agent.speed = 4;
+        agent.speed = 2;
 
         player = GameObject.FindGameObjectWithTag("Player").transform;
     }
@@ -31,7 +31,7 @@ public class CheseBehaviour : StateMachineBehaviour
     override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         agent.SetDestination(agent.transform.position);
-        agent.speed = 2;
+        agent.speed = 1;
     }
 
 }

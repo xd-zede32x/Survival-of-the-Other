@@ -76,7 +76,7 @@ public class CustomController : MonoBehaviour
         {
             if (quickslotInventoru.activaSlot != null)
             {
-                if (quickslotInventoru.activaSlot.item != null)
+                if (quickslotInventoru.activaSlot.item != null) 
                 {
                     if (quickslotInventoru.activaSlot.item.itemTape == ItemTape.Instrument)
                     {

@@ -14,10 +14,10 @@ public class AtackBehaviour : StateMachineBehaviour
         animator.transform.LookAt(player);
         float destanse = Vector3.Distance(animator.transform.position, player.position);
 
-        if (destanse > 3)
+        if (destanse > 5)
             animator.SetBool("IsAtack", false);
 
-        if (destanse > 15)
+        if (destanse > 7)
             animator.SetBool("IsChese", false);
     }
    

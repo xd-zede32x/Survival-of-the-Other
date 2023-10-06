@@ -36,7 +36,7 @@ public class PotrolBehaviour : StateMachineBehaviour
         }
 
         timer += Time.deltaTime;
-        if (timer > 10)
+        if (timer >= 12)
         {
             animator.SetBool("IsPotroller", false);
         }

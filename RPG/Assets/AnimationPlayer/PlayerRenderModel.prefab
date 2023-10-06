@@ -1332,7 +1332,7 @@ GameObject:
   - component: {fileID: 2065309893843311624}
   m_Layer: 0
   m_Name: PlayerRenderModel
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1521,8 +1521,7 @@ Transform:
   m_LocalPosition: {x: 0.07801581, y: 0.021780632, z: -0.004967184}
   m_LocalScale: {x: 0.23622084, y: 0.2362209, z: 0.23622058}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 4972025497357162570}
+  m_Children: []
   m_Father: {fileID: 7965798542787118789}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: -13.543, y: 16.589, z: -7.872}
@@ -1601,121 +1600,6 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
---- !u!1 &4972025497357162569
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4972025497357162570}
-  m_Layer: 0
-  m_Name: StoneAxis
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &4972025497357162570
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4972025497357162569}
-  m_LocalRotation: {x: 0.21188271, y: 0.088458195, z: -0.28088698, w: 0.93187094}
-  m_LocalPosition: {x: -0.734, y: -0.177, z: -0.25}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 4972025497788447446}
-  m_Father: {fileID: 4972025496480274336}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 26.397, y: 2.933, z: -32.86}
---- !u!1 &4972025497788447445
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4972025497788447446}
-  - component: {fileID: 4972025497788447448}
-  - component: {fileID: 4972025497788447447}
-  m_Layer: 0
-  m_Name: stone axe
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &4972025497788447446
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4972025497788447445}
-  m_LocalRotation: {x: -0.56456035, y: 0.04412034, z: -0.39254123, w: 0.7247319}
-  m_LocalPosition: {x: 0.212, y: 0.327, z: 0.075}
-  m_LocalScale: {x: 1.3, y: 1.3, z: 1.3}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 4972025497357162570}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -51.598, y: 54.734, z: -84.979}
---- !u!33 &4972025497788447448
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4972025497788447445}
-  m_Mesh: {fileID: -951608786083511892, guid: f12a3accd756def4eaa1bd5f1d69488f, type: 3}
---- !u!23 &4972025497788447447
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4972025497788447445}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: e980572885e37e546baa976613ac20a9, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &5321891402492381715
 GameObject:
   m_ObjectHideFlags: 0
