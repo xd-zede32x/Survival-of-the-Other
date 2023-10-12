@@ -24,5 +24,4 @@ MonoBehaviour:
   inHeandName: 
   changeHealth: 0
   changeHunger: 0
-  changeThirst: 0
-  healAmount: 0
+  changeThirst: 20
